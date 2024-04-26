@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C315B8EE2BD014D40013D63A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C315B8ED2BD014D40013D63A /* AppDelegate.swift */; };
-		C315B8F02BD014D40013D63A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C315B8EF2BD014D40013D63A /* SceneDelegate.swift */; };
 		C315B8F22BD014D40013D63A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C315B8F12BD014D40013D63A /* ViewController.swift */; };
-		C315B8F52BD014D40013D63A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C315B8F42BD014D40013D63A /* Base */; };
 		C315B8F72BD014D60013D63A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C315B8F62BD014D60013D63A /* Assets.xcassets */; };
 		C315B8FA2BD014D60013D63A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C315B8F92BD014D60013D63A /* Base */; };
 /* End PBXBuildFile section */
@@ -18,9 +16,7 @@
 /* Begin PBXFileReference section */
 		C315B8EA2BD014D40013D63A /* FireBaseLessonN1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireBaseLessonN1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C315B8ED2BD014D40013D63A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C315B8EF2BD014D40013D63A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C315B8F12BD014D40013D63A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C315B8F42BD014D40013D63A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C315B8F62BD014D60013D63A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C315B8F92BD014D60013D63A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C315B8FB2BD014D60013D63A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,9 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				C315B8ED2BD014D40013D63A /* AppDelegate.swift */,
-				C315B8EF2BD014D40013D63A /* SceneDelegate.swift */,
 				C315B8F12BD014D40013D63A /* ViewController.swift */,
-				C315B8F32BD014D40013D63A /* Main.storyboard */,
 				C315B8F62BD014D60013D63A /* Assets.xcassets */,
 				C315B8F82BD014D60013D63A /* LaunchScreen.storyboard */,
 				C315B8FB2BD014D60013D63A /* Info.plist */,
@@ -111,6 +105,9 @@
 				Base,
 			);
 			mainGroup = C315B8E12BD014D40013D63A;
+			packageReferences = (
+				C315B9012BD01C5C0013D63A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = C315B8EB2BD014D40013D63A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +124,6 @@
 			files = (
 				C315B8F72BD014D60013D63A /* Assets.xcassets in Resources */,
 				C315B8FA2BD014D60013D63A /* Base in Resources */,
-				C315B8F52BD014D40013D63A /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,21 +136,12 @@
 			files = (
 				C315B8F22BD014D40013D63A /* ViewController.swift in Sources */,
 				C315B8EE2BD014D40013D63A /* AppDelegate.swift in Sources */,
-				C315B8F02BD014D40013D63A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C315B8F32BD014D40013D63A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C315B8F42BD014D40013D63A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C315B8F82BD014D60013D63A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,7 +284,7 @@
 				INFOPLIST_FILE = FireBaseLessonN1/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,7 +312,7 @@
 				INFOPLIST_FILE = FireBaseLessonN1/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -363,6 +350,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C315B9012BD01C5C0013D63A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.24.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = C315B8E22BD014D40013D63A /* Project object */;
 }
